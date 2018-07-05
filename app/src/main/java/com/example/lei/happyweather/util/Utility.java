@@ -49,6 +49,7 @@ public class Utility {
         }
         return false;
     }
+    //    解析处理服务器返回的县级数据
     public static boolean handleCountyResponse(String response,int cityId){
         if(!TextUtils.isEmpty(response)){
             try {
