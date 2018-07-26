@@ -1,7 +1,7 @@
 package com.example.lei.happyweather.gson;
 
 import com.google.gson.annotations.SerializedName;
-
+//针对JSON数据中包含一个数组的情况,只需定义出单个数据的实体类即可
 public class Forecast {
     public String date;
 

@@ -20,6 +20,7 @@
         android:textSize="20sp"
         android:textColor="#fff"
         />
+    <!--城市名-->
     <TextView
         android:id="@+id/title_update_time"
         android:layout_width="wrap_content"
@@ -30,4 +31,5 @@
         android:textColor="#fff"
         android:textSize="16sp"
         />
+   <!--显示更新时间-->
 </RelativeLayout>

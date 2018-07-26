@@ -19,6 +19,7 @@
         android:id="@+id/comfort_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="舒适度"
         android:layout_margin="15dp"
         android:textColor="#fff"
         />
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
+        android:text="洗车指数"
         android:textColor="#fff"
         />
     <TextView
@@ -35,5 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff"
+        android:text="运动建议"
         />
 </LinearLayout>

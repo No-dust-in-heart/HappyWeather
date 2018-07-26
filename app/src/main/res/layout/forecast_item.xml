@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
     >
+    <!--未来几天天气的子项布局-->
+    <!--LinearLayout的orientation默认为水平排列-->
     <TextView
         android:id="@+id/data_text"
         android:layout_width="0dp"

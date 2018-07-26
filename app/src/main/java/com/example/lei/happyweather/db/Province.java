@@ -1,6 +1,6 @@
 package com.example.lei.happyweather.db;
 import org.litepal.crud.DataSupport;
-
+//litepal数据库的表结构
 public class Province extends DataSupport {
     private int id;
     private String provinceName;

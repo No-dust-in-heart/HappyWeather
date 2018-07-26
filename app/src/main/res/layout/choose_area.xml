@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#fff"
     >
-
+    <!--碎片布局,因为三级列表都要用到这个布局写到碎片里便于复用-->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
@@ -27,7 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
             android:background="@drawable/homepage" />
-        <!--此处返回图标-->
+        <!--此处为返回图标按钮-->
     </RelativeLayout>
     <ListView
         android:id="@+id/list_view"

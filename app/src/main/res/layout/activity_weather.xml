@@ -2,25 +2,25 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    >
+    android:background="@color/colorPrimary">
+
     <ImageView
         android:id="@+id/bing_pic_img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/qiutian"
-        />
+        android:src="@drawable/qiutian" />
+    <!--背景图-->
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <!--滑动菜单-->
         <android.support.v4.widget.SwipeRefreshLayout
             android:id="@+id/swipe_refresh"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
+            android:layout_height="match_parent">
+            <!--下拉刷新-->
             <ScrollView
                 android:id="@+id/weather_layout"
                 android:layout_width="match_parent"
@@ -31,9 +31,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:fitsSystemWindows="true"
-                    >
+                    android:orientation="vertical">
+                    <!--android:fitsSystemWindows="true"用于为系统状态栏留出空间-->
 
                     <include layout="@layout/title" />
 
@@ -47,12 +47,13 @@
                 </LinearLayout>
             </ScrollView>
         </android.support.v4.widget.SwipeRefreshLayout>
+
         <fragment
             android:id="@+id/choose_area_frament"
             android:name="com.example.lei.happyweather.ChooseAreaFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="start"
-            />
+            android:layout_gravity="start" />
+        <!--DrawerLayout的第一个子控件是主屏幕显示的内容,第二个子控件才是滑动菜单中的内容-->
     </android.support.v4.widget.DrawerLayout>
 </FrameLayout>

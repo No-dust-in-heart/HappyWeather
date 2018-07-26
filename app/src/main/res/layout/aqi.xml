@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp">
-
+        <!--水平-->
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -36,6 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:text="aqi"
                     android:textColor="#fff"
                     android:textSize="40sp" />
 
@@ -64,6 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:text="pm2.5"
                     android:textColor="#fff"
                     android:textSize="42sp" />
 

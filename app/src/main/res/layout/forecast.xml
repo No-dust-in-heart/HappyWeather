@@ -20,7 +20,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
+    <!--用于显示未来几天的天气-->
     </LinearLayout>
 
 </LinearLayout>

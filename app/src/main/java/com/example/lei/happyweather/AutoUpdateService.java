@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 
 import com.example.lei.happyweather.gson.Weather;
 import com.example.lei.happyweather.util.HttpUtil;
+import com.example.lei.happyweather.util.LogUtil;
 import com.example.lei.happyweather.util.Utility;
 
 import java.io.IOException;
@@ -33,7 +34,7 @@ public class AutoUpdateService extends Service {
         updateWeather();
         updateBingPic();
         AlarmManager manager= (AlarmManager) getSystemService(ALARM_SERVICE);
-        int anHour =8*60*60*100;//八小时的毫秒数
+        int anHour = 8 *60 * 60 * 1000;//后台服务执行间隔毫秒数
         long triggerAtTime = SystemClock.elapsedRealtime()+anHour;
         Intent i=new Intent(this,AutoUpdateService.class);
         PendingIntent pi=PendingIntent.getService(this,0,i,0);
@@ -58,6 +59,7 @@ public class AutoUpdateService extends Service {
 
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
+                    LogUtil.d("天气AutoService","天气请求");
                     String responseText=response.body().string();
                     Weather weather=Utility.handleWeatherResponse(responseText);
                     if(weather!=null&&"ok".equals(weather.status)){
